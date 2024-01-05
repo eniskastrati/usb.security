@@ -15,7 +15,7 @@ sudo cp ./src/usb.security.service /etc/systemd/system/;
 sudo chmod +x /usr/local/bin/usb-shutdown-script.sh;
 
 #Enabling & Starting the security service
-systemctl enable usb.shutdown.service;
-systemctl start usb.shutdown.service;
+systemctl enable usb.security.service;
+systemctl start usb.security.service;
 
 echo "Thank you for using usb.service !";

@@ -10,8 +10,8 @@ echo
 echo "Please type in your password to allw the delete process: ";
 
 #Stoping & Disabling the security service
-systemctl stop usb.shutdown.service;
-systemctl disable usb.shutdown.service;
+systemctl stop usb.security.service;
+systemctl disable usb.security.service;
 
 #Coyping the files from repo to the system
 sudo rm -rf /usr/local/bin/usb-shutdown-script.sh ;
