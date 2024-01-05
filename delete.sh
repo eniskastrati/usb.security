@@ -17,4 +17,6 @@ systemctl disable usb.security.service;
 sudo rm -rf /usr/local/bin/usb-shutdown-script.sh ;
 sudo rm -rf /etc/systemd/system/usb.security.service;
 
+sudo rm -rf ~/.config/usb.security/.config;
+
 echo "Thank you for using the usb.service !"

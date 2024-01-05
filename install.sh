@@ -18,4 +18,7 @@ sudo chmod +x /usr/local/bin/usb-shutdown-script.sh;
 systemctl enable usb.security.service;
 systemctl start usb.security.service;
 
+#creating a config file to save trusted devices
+sudo touch ~/.config/usb.security/.config
+
 echo "Thank you for using usb.service !";
