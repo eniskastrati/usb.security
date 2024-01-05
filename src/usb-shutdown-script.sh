@@ -12,3 +12,11 @@ check_unknown_devices() {
     fi
 }
 
+while true; do
+    if [ "$USB_CHECK_ENABLED" = true ]; then
+        check_unknown_devices
+    else
+        echo "USB device check is disabled. Allowing connection..."
+    fi
+    sleep 10 # Check every 10 seconds recommendet(change if you want)
+done
