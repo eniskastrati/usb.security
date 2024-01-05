@@ -8,14 +8,14 @@ echo
 echo "Please type in your password to allw the setup: ";
 
 #Coyping the files from repo to the system
-cp ./src/usb-shutdown-script.sh /usr/local/bin/;
-cp ./src/usb.security.service /etc/systemd/system;
+sudo cp ./src/usb-shutdown-script.sh /usr/local/bin/;
+sudo cp ./src/usb.security.service /etc/systemd/system/;
 
 #Making the file executable
 sudo chmod +x /usr/local/bin/usb-shutdown-script.sh;
 
 #Enabling & Starting the security service
-systemctl enable usb-shutdown.service;
-systemctl start usb-shutdown.service;
+systemctl enable usb.shutdown.service;
+systemctl start usb.shutdown.service;
 
 echo "Thank you for using usb.service !";

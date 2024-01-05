@@ -10,11 +10,11 @@ echo
 echo "Please type in your password to allw the delete process: ";
 
 #Stoping & Disabling the security service
-systemctl stop usb-shutdown.service;
-systemctl disable usb-shutdown.service;
+systemctl stop usb.shutdown.service;
+systemctl disable usb.shutdown.service;
 
 #Coyping the files from repo to the system
-rm -rf /usr/local/bin/usb-shutdown-script.sh ;
-rm -rf /etc/systemd/system/usb.security.service;
+sudo rm -rf /usr/local/bin/usb-shutdown-script.sh ;
+sudo rm -rf /etc/systemd/system/usb.security.service;
 
 echo "Thank you for using the usb.service !"
